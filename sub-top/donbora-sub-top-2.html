@@ -1,0 +1,84 @@
+<!-- ===================================================================
+     돈보라 서브 상단 2 — 강의 상품
+     이 파일 전체를 복사해서 아임웹 > 코드(HTML) 위젯에 붙여넣으세요.
+
+     · PC   : 배경 이미지(아파트 사진) + HTML 텍스트
+     · 모바일 : 배경 이미지 없이 단색(#CADAEC) + 텍스트만
+     · 글씨는 이미지가 아니라 HTML 텍스트입니다. 아래에서 바로 고치세요.
+     · 폰트는 Pretendard.
+
+     [다른 페이지에 재사용할 때]
+       제목과 설명 글자만 바꾸면 됩니다. 배경은 그대로 두셔도 됩니다.
+     =================================================================== -->
+
+<!-- Pretendard 웹폰트 (사이트 전체에 이미 적용돼 있으면 이 줄은 지워도 됩니다) -->
+<link rel="stylesheet" as="style" crossorigin
+      href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css" />
+
+<div class="dst-hero" id="dstHero">
+  <img class="dst-bg"
+       src="https://cdn.jsdelivr.net/gh/bjssh12/imweb_site@main/sub-top/images/subtop2_pc_bg.webp"
+       alt="" />
+  <div class="dst-copy">
+    <p class="dst-title">강의 상품</p>
+    <!-- br 앞의 띄어쓰기는 지우지 마세요. 모바일에서 줄바꿈이 풀릴 때 두 문장이 붙지 않게 해줍니다. -->
+    <p class="dst-desc">돈보라의 전문가들이 1:1로 맞춤 상담을 제공합니다. <br class="dst-br" />부동산 매수, 세무, 재무설계까지 원스톱으로 해결하세요.</p>
+  </div>
+</div>
+
+<style>
+#dstHero {
+  --dst-mobile-bg: #CADAEC;   /* 모바일 배경색 */
+
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+  aspect-ratio: 1750 / 274;   /* PC 배경 이미지 비율 */
+  container-type: inline-size;
+
+  font-family: 'Pretendard Variable', Pretendard, -apple-system, BlinkMacSystemFont,
+               system-ui, 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+  word-break: keep-all;
+  background: var(--dst-mobile-bg);   /* 이미지 로딩 전에도 색이 보이도록 */
+}
+#dstHero * { box-sizing: border-box; font-family: inherit; }
+
+#dstHero .dst-bg {
+  position: absolute; inset: 0;
+  width: 100%; height: 100%;
+  object-fit: cover; object-position: center;
+  display: block; user-select: none; -webkit-user-drag: none;
+}
+
+/* 글자 크기는 배너 폭에 비례(cqw)하되,
+   화면이 작아져도 너무 작아지지 않고 커져도 과하지 않게 clamp로 상·하한을 둡니다. */
+#dstHero .dst-copy {
+  position: absolute; left: 4.57%; top: 50%; transform: translateY(-50%);
+  z-index: 1; margin: 0;
+}
+#dstHero .dst-title {
+  margin: 0;
+  font-size: clamp(20px, 1.6cqw, 28px);
+  font-weight: 700; color: #07080c; line-height: 1.2;
+}
+#dstHero .dst-desc {
+  margin: 0.45em 0 0;
+  font-size: clamp(14px, 1.029cqw, 18px);
+  font-weight: 400; color: #5a5f5e; line-height: 1.5;
+}
+
+/* -------- 모바일: 배경 이미지 없이 단색 + 텍스트만 -------- */
+@media (max-width: 767px) {
+  #dstHero {
+    aspect-ratio: auto;
+    height: 180px;                      /* 모바일 높이 고정 */
+    background: var(--dst-mobile-bg);
+  }
+  #dstHero .dst-bg { display: none; }
+  #dstHero .dst-copy { left: 20px; right: 20px; }   /* 세로 중앙 정렬은 그대로 유지 */
+  #dstHero .dst-title { font-size: 22px; }
+  #dstHero .dst-desc  { font-size: 15px; line-height: 1.55; }
+  #dstHero .dst-br { display: none; }   /* 강제 줄바꿈 해제 — 화면 폭에 맞춰 자연스럽게 흐르도록 */
+}
+</style>
