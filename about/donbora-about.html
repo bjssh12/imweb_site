@@ -625,14 +625,14 @@
   #dbrAbout .s4-row { margin-top: 28px; gap: 12px; }
   #dbrAbout .s4-card { padding: 24px; }
 
-  /* 섹션 5 : 사진을 겹치지 않고 문구 아래로 내려 세로로 쌓음 */
-  #dbrAbout .dba-s5 { aspect-ratio: auto; display: block; }
-  #dbrAbout .s5-inner { padding-top: 8px; padding-bottom: 48px; }
+  /* 섹션 5 : 로고·문구를 위로, 사진을 그 아래로 세로 배치 */
+  #dbrAbout .dba-s5 { aspect-ratio: auto; display: flex; flex-direction: column; }
+  #dbrAbout .s5-inner { order: 1; padding-top: 48px; padding-bottom: 0; }
   #dbrAbout .s5-logo { width: 92px; }
   #dbrAbout .s5-title { margin-top: 16px; max-width: none; font-size: 20px; }
   #dbrAbout .s5-cloud {
-    position: static; width: 100%; max-width: 460px;
-    margin: 0 auto; padding-top: 40px;
+    order: 2; position: static; width: 100%; max-width: 460px;
+    margin: 28px auto 0; padding-bottom: 8px;
   }
 }
 </style>
