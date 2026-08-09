@@ -90,7 +90,7 @@
               <li>강력한 신뢰도 및 커뮤니티 확보</li>
             </ul>
           </div>
-          <a class="s2-cta" href="">Youtube 바로가기
+          <a class="s2-cta" href="https://www.youtube.com/@moneybora" target="_blank" rel="noopener">Youtube 바로가기
             <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg>
           </a>
         </div>
@@ -135,7 +135,7 @@
               <li>프라이빗 분석 리포트 발행</li>
             </ul>
           </div>
-          <a class="s2-cta" href="">멤버십 바로가기
+          <a class="s2-cta" href="https://membership.donbora.com/">멤버십 바로가기
             <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg>
           </a>
         </div>
@@ -259,6 +259,68 @@
               <li>2023 자산관리 교육 프로그램 기획</li>
             </ul>
           </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== 섹션 4 : 서비스 ===================== -->
+  <section class="dba-sec dba-s4">
+    <div class="dba-inner">
+      <div class="s4-header">
+        <h2 class="s4-title">고객의 자산 흐름 전반을 체계적으로 관리합니다</h2>
+        <p class="s4-desc">부동산 컨설팅, 재무 코칭, 교육 콘텐츠를 기반으로 고객의 자산 흐름 전반을 체계적으로 관리하는 종합 자산관리 서비스를 제공합니다.</p>
+      </div>
+
+      <div class="s4-row">
+
+        <article class="s4-card">
+          <div class="s4-icon s4-icon--red">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+              <path d="M9 22V12h6v10" />
+            </svg>
+          </div>
+          <h3 class="s4-card-title">부동산 컨설팅</h3>
+          <ul class="s4-bullets s4-bullets--red">
+            <li>1:1 부동산 상담</li>
+            <li>매수 전략 수립</li>
+            <li>임장 및 계약 동행</li>
+            <li>투자 리스크 분석</li>
+          </ul>
+        </article>
+
+        <article class="s4-card">
+          <div class="s4-icon s4-icon--green">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M19 7V4a1 1 0 0 0-1-1H5a2 2 0 0 0 0 4h15a1 1 0 0 1 1 1v4h-3a2 2 0 0 0 0 4h3a1 1 0 0 0 1-1v-2" />
+              <path d="M3 5v14a2 2 0 0 0 2 2h15a1 1 0 0 0 1-1v-4" />
+            </svg>
+          </div>
+          <h3 class="s4-card-title">재무 코칭 및 자산관리</h3>
+          <ul class="s4-bullets s4-bullets--green">
+            <li>현금흐름 분석</li>
+            <li>저축률 관리</li>
+            <li>부채관리 컨설팅</li>
+            <li>장기 자산 목표 설정</li>
+          </ul>
+        </article>
+
+        <article class="s4-card">
+          <div class="s4-icon s4-icon--amber">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M12 7v14" />
+              <path d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z" />
+            </svg>
+          </div>
+          <h3 class="s4-card-title">교육 콘텐츠</h3>
+          <ul class="s4-bullets s4-bullets--amber">
+            <li>부동산 시장 분석</li>
+            <li>재테크 교육</li>
+            <li>공모주/연금/현금흐름 강의</li>
+            <li>오프라인 세미나 및 강연</li>
+          </ul>
         </article>
 
       </div>
@@ -441,9 +503,48 @@
 }
 #dbrAbout .s3-bullets li::before { content: '•'; position: absolute; left: 0; top: 0; color: #0284c7; font-weight: 700; }
 
+/* -------- 섹션 4 -------- */
+#dbrAbout .dba-s4 { background: #eef1f0; }
+#dbrAbout .s4-title {
+  font-size: clamp(24px, 2.5vw, 36px);
+  font-weight: 700; line-height: 1.3; color: var(--dba-ink); letter-spacing: -0.02em;
+}
+#dbrAbout .s4-desc { margin-top: 16px; font-size: clamp(14px, 1.05vw, 15px); line-height: 1.6; color: var(--dba-body); }
+
+#dbrAbout .s4-row { margin-top: 40px; display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+#dbrAbout .s4-card {
+  background: #fff; border: 1px solid var(--dba-border); border-radius: 16px; padding: 32px;
+}
+#dbrAbout .s4-icon {
+  width: 48px; height: 48px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+}
+#dbrAbout .s4-icon svg {
+  width: 24px; height: 24px; fill: none; stroke-width: 2;
+  stroke-linecap: round; stroke-linejoin: round;
+}
+#dbrAbout .s4-icon--red   { background: #fee2e2; }
+#dbrAbout .s4-icon--green { background: #ecfdf5; }
+#dbrAbout .s4-icon--amber { background: #fef3c7; }
+#dbrAbout .s4-icon--red   svg { stroke: #dc2626; }
+#dbrAbout .s4-icon--green svg { stroke: #059669; }
+#dbrAbout .s4-icon--amber svg { stroke: #d97706; }
+
+#dbrAbout .s4-card-title { margin-top: 20px; font-size: 18px; font-weight: 700; color: #0f172a; line-height: 1.2; }
+#dbrAbout .s4-bullets { margin: 16px 0 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 6px; }
+#dbrAbout .s4-bullets li {
+  position: relative; padding-left: 14px;
+  font-size: 14px; line-height: 1.45; color: var(--dba-body);
+}
+#dbrAbout .s4-bullets li::before { content: '•'; position: absolute; left: 0; top: 0; font-weight: 700; }
+#dbrAbout .s4-bullets--red   li::before { color: #dc2626; }
+#dbrAbout .s4-bullets--green li::before { color: #059669; }
+#dbrAbout .s4-bullets--amber li::before { color: #d97706; }
+
 /* 태블릿: 3열 카드가 좁아지지 않게 2열로 */
 @media (max-width: 1023px) {
   #dbrAbout .s3-row--3 { grid-template-columns: repeat(2, 1fr); }
+  #dbrAbout .s4-row { grid-template-columns: repeat(2, 1fr); }
 }
 
 /* -------- 모바일 -------- */
@@ -473,5 +574,11 @@
   #dbrAbout .s3-card { padding: 24px; gap: 16px; }
   #dbrAbout .s3-avatar { width: 64px; height: 64px; }
   #dbrAbout .s3-top { gap: 12px; }
+
+  /* 섹션 4 : 카드 1열 */
+  #dbrAbout .s4-title { font-size: 24px; }
+  #dbrAbout .s4-desc { margin-top: 12px; font-size: 14px; }
+  #dbrAbout .s4-row { margin-top: 28px; grid-template-columns: 1fr; gap: 12px; }
+  #dbrAbout .s4-card { padding: 24px; }
 }
 </style>
