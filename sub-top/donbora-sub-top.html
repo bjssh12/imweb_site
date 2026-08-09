@@ -21,7 +21,8 @@
        alt="" />
   <div class="dst-copy">
     <p class="dst-title">부동산</p>
-    <p class="dst-desc">돈보라의 전문가들이 1:1로 맞춤 상담을 제공합니다.<br class="dst-br" />부동산 매수, 세무, 재무설계까지 원스톱으로 해결하세요.</p>
+    <!-- br 앞의 띄어쓰기는 지우지 마세요. 모바일에서 줄바꿈이 풀릴 때 두 문장이 붙지 않게 해줍니다. -->
+    <p class="dst-desc">돈보라의 전문가들이 1:1로 맞춤 상담을 제공합니다. <br class="dst-br" />부동산 매수, 세무, 재무설계까지 원스톱으로 해결하세요.</p>
   </div>
 </div>
 
@@ -71,7 +72,7 @@
 @media (max-width: 767px) {
   #dstHero {
     aspect-ratio: auto;
-    height: 274px;                      /* 모바일 높이 고정 */
+    height: 180px;                      /* 모바일 높이 고정 */
     background: var(--dst-mobile-bg);
   }
   #dstHero .dst-bg { display: none; }
