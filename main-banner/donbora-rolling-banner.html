@@ -2,10 +2,14 @@
      돈보라 메인 롤링 배너
      이 파일 전체를 복사해서 아임웹 > 코드(HTML) 위젯에 붙여넣으세요.
 
-     · 이 파일 하나에 HTML · CSS · JavaScript · jQuery가 모두 들어 있습니다.
-     · 이미지는 전부 절대경로(https:// 전체 주소)로 넣습니다.
+     · 한 파일에 HTML · CSS · JavaScript · jQuery가 모두 들어 있습니다.
+     · 배경 이미지는 절대경로(https:// 전체 주소)입니다.
+     · 글씨는 이미지가 아니라 HTML 텍스트입니다. 아래 본문에서 바로 고치세요.
      · 폰트는 Pretendard.
-     · 수정은 아래 "① 여기만 수정" 부분만 건드리면 됩니다.
+
+     [문구 수정]  아래 <a class="dbr-slide"> 안의 글자를 고치면 됩니다.
+     [링크 연결]  각 <a>의 href="" 안에 주소를 넣으세요.
+     [속도 조절]  맨 아래 AUTOPLAY_MS 값을 고치세요.
      =================================================================== -->
 
 <!-- Pretendard 웹폰트 -->
@@ -14,8 +18,79 @@
 
 <div class="dbr-banner" id="dbrBanner">
   <div class="dbr-viewport">
-    <div class="dbr-track" id="dbrTrack"></div>
+    <div class="dbr-track" id="dbrTrack">
+
+      <!-- ===== 배너1 : 갈아타기 타이밍 ===== -->
+      <a class="dbr-slide" href="" data-alt="갈아타기 타이밍, 데이터로 먼저 알려드립니다">
+        <img class="dbr-bg" src="https://cdn.jsdelivr.net/gh/bjssh12/imweb_site@main/main-banner/images/banner1_pc_bg.webp" alt="" />
+        <div class="dbr-copy b1-copy">
+          <p class="b1-l1">갈아타기 타이밍,</p>
+          <p class="b1-l2"><b>데이터</b>로 먼저<br />알려드립니다</p>
+        </div>
+      </a>
+
+      <!-- ===== 배너2 : 돈보라 풀케어 ===== -->
+      <a class="dbr-slide" href="" data-alt="매수를 위한 진짜 상담, 돈보라 풀케어">
+        <img class="dbr-bg" src="https://cdn.jsdelivr.net/gh/bjssh12/imweb_site@main/main-banner/images/banner2_pc_bg.webp" alt="" />
+        <div class="dbr-mark b2-mark"></div>
+        <div class="dbr-copy b2-stat">
+          <p>부동산 계약 금액 <b>3,000억+</b></p>
+          <p>매수 동행 의뢰인 <b>730명+</b></p>
+        </div>
+        <div class="dbr-copy b2-title">
+          <p><b>매수</b>를 위한 진짜 상담</p>
+          <p><b>돈보라 풀케어</b></p>
+        </div>
+      </a>
+
+      <!-- ===== 배너3 : 감자쌤 현금흐름 ===== -->
+      <a class="dbr-slide" href="" data-alt="감자쌤이 알려주는 하루 10분 현금흐름 만들기">
+        <img class="dbr-bg" src="https://cdn.jsdelivr.net/gh/bjssh12/imweb_site@main/main-banner/images/banner3_pc_bg.webp" alt="" />
+        <div class="dbr-pills b3-pills">
+          <span class="dbr-pill pill-dark">공모주</span>
+          <span class="dbr-pill pill-white">스팩주</span>
+        </div>
+        <div class="dbr-mark b3-mark"></div>
+        <div class="dbr-copy b3-title">
+          <p><b>감자쌤</b>이 알려주는</p>
+          <p><b>하루 10분</b></p>
+          <p><b>현금흐름 만들기</b></p>
+        </div>
+      </a>
+
+      <!-- ===== 배너4 : 퇴직 이후 연금흐름 ===== -->
+      <a class="dbr-slide" href="" data-alt="퇴직 이후 연금흐름 만들기">
+        <img class="dbr-bg" src="https://cdn.jsdelivr.net/gh/bjssh12/imweb_site@main/main-banner/images/banner4_pc_bg.webp" alt="" />
+        <div class="dbr-pills b4-pills">
+          <span class="dbr-pill pill-pink">연금 저축 펀드</span>
+          <span class="dbr-pill pill-yellow">IRP</span>
+          <span class="dbr-pill pill-blue">ISA</span>
+        </div>
+        <div class="dbr-copy b4-title">
+          <p><b>퇴직 이후</b></p>
+          <p><b>연금흐름 만들기</b></p>
+        </div>
+      </a>
+
+      <!-- ===== 배너5 : 다오 풀케어 ===== -->
+      <a class="dbr-slide" href="" data-alt="어려운 부동산 계약에 확신과 신뢰를 주는 다오 풀케어">
+        <img class="dbr-bg" src="https://cdn.jsdelivr.net/gh/bjssh12/imweb_site@main/main-banner/images/banner5_pc_bg.webp" alt="" />
+        <div class="dbr-copy b5-stat">
+          <p>부동산 계약 금액 <b>300억+ ★고객 만족도 4.9★</b></p>
+        </div>
+        <div class="dbr-copy b5-lead">
+          <p>어려운 부동산 계약에</p>
+          <p><b>확신</b>과 <b>신뢰</b>를 주는</p>
+        </div>
+        <div class="dbr-mark b5-mark"></div>
+        <div class="dbr-copy b5-title">
+          <p><b>다오 풀케어</b></p>
+        </div>
+      </a>
+
+    </div>
   </div>
+
   <button class="dbr-arrow dbr-arrow--prev" type="button" aria-label="이전 배너">
     <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 4l-8 8 8 8" /></svg>
   </button>
@@ -28,11 +103,11 @@
 
 <!-- ============================ CSS ============================ -->
 <style>
+/* -------- 배너 틀 -------- */
 #dbrBanner {
-  /* 이미지 로드 전 임시 비율. 로드되면 실제 이미지 비율로 자동 교체됩니다. */
-  --dbr-ratio: 1920 / 460;
-  --dbr-radius: 0px;      /* 모서리를 둥글게 하려면 예: 12px */
-  --dbr-maxwidth: none;   /* 배너 최대 폭을 제한하려면 예: 1920px */
+  --dbr-ratio: 1920 / 460;   /* 배경 이미지 비율 */
+  --dbr-radius: 0px;
+  --dbr-maxwidth: none;
 
   position: relative;
   width: 100%;
@@ -42,8 +117,7 @@
   border-radius: var(--dbr-radius);
 
   font-family: 'Pretendard Variable', Pretendard, -apple-system, BlinkMacSystemFont,
-               system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo',
-               'Noto Sans KR', 'Malgun Gothic', sans-serif;
+               system-ui, 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
   word-break: keep-all;
 }
 #dbrBanner * { box-sizing: border-box; font-family: inherit; }
@@ -58,28 +132,73 @@
   flex: 0 0 100%; width: 100%; height: 100%;
   display: block; position: relative; overflow: hidden;
   text-decoration: none; -webkit-tap-highlight-color: transparent;
+  container-type: inline-size;   /* 글씨가 배너 폭에 비례해 커지고 작아지도록 */
 }
-#dbrBanner .dbr-slide picture { display: block; width: 100%; height: 100%; }
-#dbrBanner .dbr-slide img {
+#dbrBanner .dbr-bg {
+  position: absolute; inset: 0;
   width: 100%; height: 100%; object-fit: cover; object-position: center;
   display: block; user-select: none; -webkit-user-drag: none;
 }
 
-/* 이미지를 아직 못 불러왔을 때 보이는 자리표시 */
-#dbrBanner .dbr-placeholder {
-  width: 100%; height: 100%;
-  display: flex; align-items: center; justify-content: center; text-align: center; padding: 12px;
-  background: repeating-linear-gradient(45deg, #d0d7dd 0 14px, #c2cad2 14px 28px);
-  color: #2b3440; font-size: 17px; font-weight: 700; letter-spacing: -0.02em;
+/* -------- 글씨 공통 --------
+   좌표(left/top)는 1920x460 디자인 기준 백분율,
+   글자 크기는 cqw(배너 폭의 1%) 단위라 화면이 줄어도 배경과 같은 비율로 줄어듭니다. */
+#dbrBanner .dbr-copy {
+  position: absolute; z-index: 2; margin: 0;
+  letter-spacing: -0.104cqw;
+  white-space: nowrap;
 }
+#dbrBanner .dbr-copy p { margin: 0; }
+#dbrBanner .dbr-copy b { font-weight: 800; }
+#dbrBanner .dbr-mark { position: absolute; z-index: 1; }   /* 형광펜 하이라이트 */
 
-/* 좌우 화살표 — 마우스가 있는 큰 화면에서만 노출 */
+/* -------- 알약 배지 -------- */
+#dbrBanner .dbr-pills { position: absolute; z-index: 2; display: flex; gap: 0.208cqw; }
+#dbrBanner .dbr-pill {
+  display: inline-flex; align-items: center; justify-content: center;
+  font-size: 1.167cqw; font-weight: 800; letter-spacing: -0.104cqw;
+  padding: 0.21cqw 0.71cqw; border-radius: 999px; line-height: 1.4;
+}
+#dbrBanner .pill-dark   { background: #07080c; color: #ffffff; }
+#dbrBanner .pill-white  { background: #ffffff; color: #07080c; }
+#dbrBanner .pill-pink   { background: #ff8c94; color: #ffffff; }
+#dbrBanner .pill-yellow { background: #ffcc5d; color: #07080c; }
+#dbrBanner .pill-blue   { background: #43abdb; color: #ffffff; }
+
+/* -------- 배너1 -------- */
+#dbrBanner .b1-copy { left: 25.80%; top: 37.22%; }
+#dbrBanner .b1-l1 { font-size: 2.323cqw; font-weight: 700; color: #c7ebf7; line-height: 1.15; }
+#dbrBanner .b1-l2 { font-size: 2.323cqw; font-weight: 500; color: #c7ebf7; line-height: 1.25; margin-top: 0.56cqw; }
+#dbrBanner .b1-l2 b { color: #ffffff; }
+
+/* -------- 배너2 -------- */
+#dbrBanner .b2-stat   { left: 27.24%; top: 30.48%; font-size: 1.286cqw; font-weight: 500; color: #5a5f5e; line-height: 1.4; }
+#dbrBanner .b2-stat b { color: #2b3a4d; font-weight: 700; }
+#dbrBanner .b2-title  { left: 27.24%; top: 48.57%; font-size: 2.120cqw; font-weight: 700; color: #07080c; line-height: 1.35; }
+#dbrBanner .b2-mark   { left: 26.88%; top: 60.65%; width: 12.45%; height: 11.74%; background: #c0f988; }
+
+/* -------- 배너3 -------- */
+#dbrBanner .b3-pills { left: 27.08%; top: 26.54%; }
+#dbrBanner .b3-title { left: 27.08%; top: 38.54%; font-size: 2.073cqw; font-weight: 500; color: #07080c; line-height: 1.35; }
+#dbrBanner .b3-mark  { left: 26.90%; top: 61.20%; width: 17.60%; height: 11.70%; background: #c0f988; }
+
+/* -------- 배너4 -------- */
+#dbrBanner .b4-pills { left: 27.25%; top: 33.76%; }
+#dbrBanner .b4-title { left: 27.25%; top: 45.07%; font-size: 2.307cqw; font-weight: 800; color: #07080c; line-height: 1.35; }
+
+/* -------- 배너5 -------- */
+#dbrBanner .b5-stat  { left: 26.35%; top: 18.04%; font-size: 1.250cqw; font-weight: 500; color: #ffffff; line-height: 1.4; }
+#dbrBanner .b5-lead  { left: 26.58%; top: 40.70%; font-size: 1.667cqw; font-weight: 500; color: #ffffff; line-height: 1.35; }
+#dbrBanner .b5-mark  { left: 25.71%; top: 63.83%; width: 15.33%; height: 15.48%; background: #ffe7b5; transform: skewX(-11deg); }
+#dbrBanner .b5-title { left: 26.58%; top: 64.87%; font-size: 2.307cqw; font-weight: 800; color: #07080c; line-height: 1.35; }
+
+/* -------- 화살표 -------- */
 #dbrBanner .dbr-arrow {
   position: absolute; top: 50%; transform: translateY(-50%);
   width: 44px; height: 44px; padding: 0; border: 0; border-radius: 50%; cursor: pointer;
   background: rgba(0, 0, 0, 0.32);
   display: none; align-items: center; justify-content: center;
-  opacity: 0; transition: opacity .2s ease, background .2s ease; z-index: 2;
+  opacity: 0; transition: opacity .2s ease, background .2s ease; z-index: 3;
 }
 #dbrBanner:hover .dbr-arrow, #dbrBanner .dbr-arrow:focus-visible { opacity: 1; }
 #dbrBanner .dbr-arrow:hover { background: rgba(0, 0, 0, 0.55); }
@@ -89,14 +208,12 @@
   width: 22px; height: 22px; fill: none; stroke: #fff;
   stroke-width: 2.2; stroke-linecap: round; stroke-linejoin: round;
 }
-@media (min-width: 1024px) and (hover: hover) {
-  #dbrBanner .dbr-arrow { display: flex; }
-}
+@media (min-width: 1024px) and (hover: hover) { #dbrBanner .dbr-arrow { display: flex; } }
 
-/* 하단 도트 */
+/* -------- 도트 -------- */
 #dbrBanner .dbr-dots {
   position: absolute; left: 50%; bottom: 18px; transform: translateX(-50%);
-  display: flex; align-items: center; gap: 8px; z-index: 2;
+  display: flex; align-items: center; gap: 8px; z-index: 3;
   padding: 8px 12px; border-radius: 999px; background: rgba(0, 0, 0, 0.28);
 }
 #dbrBanner .dbr-dot {
@@ -117,61 +234,12 @@
 <!-- ======================= jQuery + JavaScript ======================= -->
 <script>
 (function () {
-  /* ===============================================================
-     ① 여기만 수정하세요
-
-     pc     : 데스크탑용(가로형) 이미지 주소 — https:// 전체 주소(절대경로)
-     mo     : 모바일용(세로형) 이미지 주소 — https:// 전체 주소(절대경로)
-     link   : 배너를 눌렀을 때 이동할 주소 ('' 로 두면 클릭 안 되는 배너)
-     alt    : 이미지 설명 (검색 노출·접근성용)
-     newTab : true면 새 창으로 열림
-     =============================================================== */
-  var BANNERS = [
-    {
-      pc:   'https://cdn.jsdelivr.net/gh/bjssh12/imweb_site@main/main-banner/images/banner1_pc.webp',
-      mo:   'https://cdn.jsdelivr.net/gh/bjssh12/imweb_site@main/main-banner/images/banner1_mo.webp',
-      link: '',
-      alt:  '갈아타기 할 때까지 — 돈보라멤버십',
-      newTab: false
-    },
-    {
-      pc:   'https://cdn.jsdelivr.net/gh/bjssh12/imweb_site@main/main-banner/images/banner2_pc.webp',
-      mo:   'https://cdn.jsdelivr.net/gh/bjssh12/imweb_site@main/main-banner/images/banner2_mo.webp',
-      link: '',
-      alt:  '매수를 위한 진짜 상담, 돈보라 풀케어',
-      newTab: false
-    },
-    {
-      pc:   'https://cdn.jsdelivr.net/gh/bjssh12/imweb_site@main/main-banner/images/banner3_pc.webp',
-      mo:   'https://cdn.jsdelivr.net/gh/bjssh12/imweb_site@main/main-banner/images/banner3_mo.webp',
-      link: '',
-      alt:  '감자쌤이 알려주는 하루 10분 현금흐름 만들기',
-      newTab: false
-    },
-    {
-      pc:   'https://cdn.jsdelivr.net/gh/bjssh12/imweb_site@main/main-banner/images/banner4_pc.webp',
-      mo:   'https://cdn.jsdelivr.net/gh/bjssh12/imweb_site@main/main-banner/images/banner4_mo.webp',
-      link: '',
-      alt:  '퇴직 이후 연금흐름 만들기',
-      newTab: false
-    },
-    {
-      pc:   'https://cdn.jsdelivr.net/gh/bjssh12/imweb_site@main/main-banner/images/banner5_pc.webp',
-      mo:   'https://cdn.jsdelivr.net/gh/bjssh12/imweb_site@main/main-banner/images/banner5_mo.webp',
-      link: '',
-      alt:  '어려운 부동산 계약에 확신과 신뢰를 주는 다오 풀케어',
-      newTab: false
-    }
-  ];
-
-  var AUTOPLAY_MS   = 4000;  // 배너가 넘어가는 간격 (0으로 하면 자동 넘김 끔)
-  var SPEED_MS      = 600;   // 넘어가는 애니메이션 속도
-  var MOBILE_MAX_PX = 767;   // 이 폭 이하에서 모바일 이미지 사용
+  var AUTOPLAY_MS = 4000;  // 배너가 넘어가는 간격 (0으로 하면 자동 넘김 끔)
+  var SPEED_MS    = 600;   // 넘어가는 애니메이션 속도
 
   /* =============== 여기부터는 수정하지 않아도 됩니다 =============== */
 
-  // jQuery가 이미 있으면 그대로 쓰고, 없을 때만 불러옵니다.
-  // (아임웹에는 jQuery가 기본으로 들어 있어서, 중복으로 불러오면 충돌할 수 있습니다)
+  // 아임웹에는 jQuery가 이미 있으므로, 없을 때만 불러옵니다.
   if (window.jQuery) {
     window.jQuery(document).ready(start);
   } else {
@@ -189,71 +257,45 @@
     var $dots  = $('#dbrDots');
     if (!$root.length || !$track.length) return;
 
-    var total = BANNERS.length;
+    var $slides = $track.children('.dbr-slide');
+    var total = $slides.length;
     if (!total) { $root.hide(); return; }
 
-    // 첫 배너 이미지의 실제 픽셀에서 비율을 읽어 배너 높이에 반영
+    // 링크가 비어 있으면 클릭돼도 아무 일 없도록 하고, 설명문은 접근성 라벨로
+    $slides.each(function () {
+      var $s = $(this);
+      if (!$s.attr('href')) $s.removeAttr('href');
+      var alt = $s.data('alt');
+      if (alt) $s.attr('aria-label', alt);
+    });
+
+    // 배경 이미지의 실제 비율로 배너 높이를 맞춤
     function syncRatio(img) {
       if (img && img.naturalWidth && img.naturalHeight) {
         $root[0].style.setProperty('--dbr-ratio', img.naturalWidth + ' / ' + img.naturalHeight);
       }
     }
-
-    function placeholder(index, message) {
-      return $('<div class="dbr-placeholder"></div>')
-        .text('배너' + (index + 1) + ' — ' + message);
+    var firstImg = $slides.eq(0).find('.dbr-bg')[0];
+    if (firstImg) {
+      $(firstImg).on('load', function () { syncRatio(this); });
+      if (firstImg.complete) syncRatio(firstImg);
     }
 
-    function buildSlide(item, index, isClone) {
-      var $slide = item.link
-        ? $('<a class="dbr-slide"></a>').attr('href', item.link)
-        : $('<div class="dbr-slide"></div>');
-
-      if (item.link && item.newTab) $slide.attr({ target: '_blank', rel: 'noopener' });
-      if (isClone) $slide.attr('aria-hidden', 'true');
-
-      if (!item.pc && !item.mo) {
-        return $slide.append(placeholder(index, '이미지 주소를 넣어주세요'));
-      }
-
-      var $picture = $('<picture></picture>');
-      if (item.pc && item.mo) {
-        $picture.append(
-          $('<source>').attr({ media: '(max-width: ' + MOBILE_MAX_PX + 'px)', srcset: item.mo })
-        );
-      }
-
-      var $img = $('<img>')
-        .attr('alt', isClone ? '' : (item.alt || ''))
-        .attr('decoding', 'async')
-        .prop('draggable', false);
-
-      if (index === 0 && !isClone) {
-        $img.attr('fetchpriority', 'high');
-        // 화면 폭이 바뀌어 PC↔모바일 이미지가 교체될 때마다 비율 재계산
-        $img.on('load', function () { syncRatio(this); });
-      }
-      // 주소가 틀렸을 때 깨진 이미지 아이콘 대신 안내 문구 표시
-      $img.on('error', function () {
-        $picture.remove();
-        $slide.append(placeholder(index, '이미지를 못 찾았어요. 주소를 확인해주세요'));
-      });
-
-      $img.attr('src', item.pc || item.mo);
-      return $slide.append($picture.append($img));
+    // 무한 롤링용으로 첫 장을 맨 뒤에 복제
+    if (total > 1) {
+      $track.append($slides.eq(0).clone().attr('aria-hidden', 'true').removeAttr('href'));
     }
-
-    $.each(BANNERS, function (i, item) { $track.append(buildSlide(item, i, false)); });
-    if (total > 1) $track.append(buildSlide(BANNERS[0], 0, true)); // 무한 롤링용 복제
 
     if (total > 1) {
-      $.each(BANNERS, function (i) {
-        $('<button type="button" class="dbr-dot"></button>')
-          .toggleClass('is-active', i === 0)
-          .attr('aria-label', (i + 1) + '번째 배너로 이동')
-          .on('click', function () { goTo(i); play(); })
-          .appendTo($dots);
-      });
+      for (var i = 0; i < total; i++) {
+        (function (idx) {
+          $('<button type="button" class="dbr-dot"></button>')
+            .toggleClass('is-active', idx === 0)
+            .attr('aria-label', (idx + 1) + '번째 배너로 이동')
+            .on('click', function (e) { e.preventDefault(); goTo(idx); play(); })
+            .appendTo($dots);
+        })(i);
+      }
     } else {
       $dots.hide();
     }
@@ -269,9 +311,7 @@
 
     function syncDots() {
       var real = index % total;
-      $dots.children('.dbr-dot').each(function (i) {
-        $(this).toggleClass('is-active', i === real);
-      });
+      $dots.children('.dbr-dot').each(function (i) { $(this).toggleClass('is-active', i === real); });
     }
 
     function goTo(nextIndex) {
@@ -281,10 +321,7 @@
       setTransform(true);
       syncDots();
       window.setTimeout(function () {
-        if (index === total) {      // 복제본에 도착 → 애니메이션 없이 첫 장으로 되돌림
-          index = 0;
-          setTransform(false);
-        }
+        if (index === total) { index = 0; setTransform(false); }   // 복제본 → 첫 장으로 순간 복귀
         locked = false;
       }, SPEED_MS);
     }
@@ -293,23 +330,15 @@
 
     function prev() {
       if (locked || total < 2) return;
-      if (index === 0) {            // 첫 장에서 뒤로 → 복제본으로 순간이동 후 애니메이션
-        index = total;
-        setTransform(false);
-        void $track[0].offsetHeight; // 강제 리플로우
-      }
+      if (index === 0) { index = total; setTransform(false); void $track[0].offsetHeight; }
       goTo(index - 1);
     }
 
-    function play() {
-      stop();
-      if (!AUTOPLAY_MS || total < 2) return;
-      timer = window.setInterval(next, AUTOPLAY_MS);
-    }
+    function play() { stop(); if (AUTOPLAY_MS && total > 1) timer = window.setInterval(next, AUTOPLAY_MS); }
     function stop() { if (timer) { window.clearInterval(timer); timer = null; } }
 
-    $root.find('.dbr-arrow--next').on('click', function () { next(); play(); });
-    $root.find('.dbr-arrow--prev').on('click', function () { prev(); play(); });
+    $root.find('.dbr-arrow--next').on('click', function (e) { e.preventDefault(); next(); play(); });
+    $root.find('.dbr-arrow--prev').on('click', function (e) { e.preventDefault(); prev(); play(); });
 
     $root.on('mouseenter', stop).on('mouseleave', play);
     $(document).on('visibilitychange', function () { document.hidden ? stop() : play(); });
@@ -323,9 +352,8 @@
     $root.on('touchend', function (e) {
       if (!dragging) return;
       dragging = false;
-      var t  = e.originalEvent.changedTouches[0];
-      var dx = t.clientX - startX;
-      var dy = t.clientY - startY;
+      var t = e.originalEvent.changedTouches[0];
+      var dx = t.clientX - startX, dy = t.clientY - startY;
       if (Math.abs(dx) > 50 && Math.abs(dx) > Math.abs(dy)) { dx < 0 ? next() : prev(); }
       play();
     });
